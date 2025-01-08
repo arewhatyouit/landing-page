@@ -4,53 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-
-    <div class="header">
+    <div class="header-container">
       <div class="header-logo">Header Logo</div>
       <div class="header-links">
-      <a href="">header link one</a>
-      <a href="">header link two</a>
-      <a href="">header link three</a>
+        <a href="">header link one</a>
+        <a href="">header link two</a>
+        <a href="">header link three</a>
       </div>
     </div>
 
-    <div class="hero">
-      <div class="hero-text-container">
-        <div class="hero-text">This website is awesome</div>
-        <div class="hero-body">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>This website is awesome</h1>
+        <p>
           This website has some subtext that goes here under the main title.
           It's a smaller font and the color is lower contrast
-        </div>
-        <button>Sign up</button>
+        </p>
+        <button class="button--hero">Sign up</button>
       </div>
 
       <img src="memorycropped.png" alt="image" />
     </div>
 
     <div class="card-container">
-      <h1>Some random information.</h1>
-      <div class="card">Card 1</div>
-      <div class="card">Card 2</div>
-      <div class="card">Card 3</div>
-      <div class="card">Card 4</div>
+      <div class="card-hero-text">Some random information.</div>
+      <div class="card-container__sub">
+        <div class="card-container__sub2">
+          <div class="card"></div>
+          <p>this is some subtext under an illustration or image</p>
+        </div>
+        <div class="card-container__sub2">
+          <div class="card"></div>
+          <p>this is some subtext under an illustration or image</p>
+        </div>
+        <div class="card-container__sub2">
+          <div class="card"></div>
+          <p>this is some subtext under an illustration or image</p>
+        </div>
+        <div class="card-container__sub2">
+          <div class="card"></div>
+          <p>this is some subtext under an illustration or image</p>
+        </div>
+      </div>
     </div>
 
-    <div class="quote">
-      <h3>
+    <div class="quote-container">
+      <h1>
         This is an inspiring quote, or a testimonial from a customer. Maybe its
         just filling up space, or maybe people willa catually read it. Who know?
-        All I know is that it looks nice. -Thor, God of Thunder
-      </h3>
+        All I know is that it looks nice.
+      </h1>
+      <p>-Thor, God of Thunder</p>
     </div>
 
+    <div class="footer-container">
     <div class="footer">
-      <h1>Call to action! Its time!</h1>
+    <div class="footer-text">
+      <h2>Call to action! Its time!</h>
       <p>Sign up for our prodcut by clicking on the button</p>
-      <button>Sign Up</button>
+    </div>
+      <button class="button--footer">Sign Up</button>
+    </div>
     </div>
 
   </body>

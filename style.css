@@ -1,86 +1,210 @@
-body {
-    height: 100vh;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-.header {
-    display: flex;
-    background: #1f2937;
-    padding: 20px 150px;
-    justify-content: space-between;
-    align-items: center;
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-container,
+.hero-container,
+.quote-container {
+  width: 100%;
+  background: #1f2937;
+  display: flex;
+}
+
+/* Header section */
+
+.header-container {
+  padding: 20px 150px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
 }
 
-.header-links, .header-links a {
-    display: flex;
-    font-size: 12px;
-    color: white;
-    text-decoration: none;
-    gap: 10px;
+.header-links,
+.header-links a {
+  display: flex;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  gap: 10px;
 }
 
-img {
-    width: 400px;
-    height: 200px;
-    object-fit: cover;
-}
+/* Hero section */
 
-.hero {
-    display: flex;
-    background: #1f2937;
-    justify-content: space-between;
-    padding: 80px 150px 100px;
+.hero-container {
+  justify-content: space-between;
+  padding: 80px 150px 100px;
 }
 
 .hero-text {
-    font-size: 30px;
-    color: #f9faf8;
-    font-weight: 900;
-    margin: 0;
-    line-height: 1.2;
-    margin-bottom: 10px;
+  width: 350px;
+  height: 200px;
 }
 
-.hero-body {
+.hero-text h1 {
+  font-size: 30px;
+  color: #f9faf8;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+.button--hero {
+    background-color: #3882F6;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 24px;
+    color: white;
+    font-weight: bold;
     font-size: 14px;
-    color: #e5e7eb;
-    margin: 0;
+    margin-top: 10px;
 }
 
-.hero-text-container {
-    width: 350px;
-    height: 200px;
+img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: none;
 }
+
+/* Card section */
 
 .card-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.card-container__sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+
+.card-container__sub2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container__sub2 p {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width: 110px;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.card-hero-text {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: black;
+  font-weight: 900;
+  margin: 0;
+  margin: 20px 0px;
 }
 
 .card {
-
+  display: flex;
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  border: solid 3px;
+  border-color: #3882f6;
+  border-radius: 8px;
 }
 
-.quote {
+/* Quote section */
 
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  background: #e5e7eb;
+  padding: 100px 180px;
+  width: 100%;
+}
+
+.quote-container h1 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+  margin: 0;
+  width: 600px;
+}
+
+.quote-container p {
+  align-self: flex-end;
+  font-size: 18px;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0;
+  padding-right: 200px;
+}
+
+/* Footer section */
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 800px;
+  height: 100px;
+  margin: 100px;
+  padding: 0 100px;
+  background-color: #3882f6;
+  border-radius: 5px;
 }
 
-button {
-    background-color: #3882f6;
-    padding: 4px 16px;
-    border: none;
-    border-radius: 4px;
+.footer-text h2 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer-text p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.button--footer {
+    background-color: #3882F6;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    padding: 4px 24px;
     color: white;
     font-weight: bold;
-    margin-top: 10px;
+    font-size: 14px;
 }
